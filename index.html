@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <title>Nippon Tour</title>
+</head>
+<body onload="iniciar()">
+    <header class="cabecalho">
+        <nav>
+            <span class="menu-burguer" onclick="ativarMenu()"><ion-icon name="reorder-three-outline"></ion-icon></span>
+            <ul class="lista-home">
+                <li id="li-select"><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#pacotes">Pacotes</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="section-home">
+
+
+        <div class="conteudo-home">
+            <div class="d-title">
+                <h1>Nippon Tours</h1>
+                <p>Conheça ás incríveis paisagens japonesas, desde o centro movimentado de Tokyo até os templos tradicionais antigos em Kyoto</p>
+            </div>
+            <div class="d-button">
+                <a href="#pacotes" id="btn-principal">Ver nossos pacotes</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="section-sobre">
+        <div class="d-sobre">
+            <h2>Sobre</h2>
+            <p>Bem-vindo à Nippon Tours! Somos apaixonados por compartilhar a essência única do Japão com nossos clientes. Com uma equipe experiente e uma abordagem personalizada, criamos experiências de viagem autênticas que exploram a rica cultura, história e beleza natural do país. Desde os movimentados centros urbanos até os santuários serenos, estamos aqui para guiar você em uma jornada inesquecível pelos destinos mais icônicos do Japão, como Tokyo, Kyoto e além.</p>
+        </div>
+
+        <div class="d-servicos">
+            <h2>Principais serviços oferecidos</h2>
+            <div class="d-cards">
+                <div class="card card-1 card-esq">
+                    <h3>Reservas e organizações de viagens</h3>
+    
+                    <p>Auxiliamos na reserva de passagens aéreas, hotéis, transporte terrestre e outras necessidades de viagem.</p>
+                </div>
+    
+                <div class="card card-2 card-dir">
+                    <h3>Tours Guiados</h3>
+                    <p>Oferecemos tours guiados por profissionais experientes, proporcionando uma experiência educativa e imersiva.</p>
+                </div>
+    
+                <div class="card card-3 card-esq">
+                    <h3>Assistência 24 horas</h3>
+                    <p>Disponibilizamos suporte e assistência aos clientes durante toda a sua viagem.</p>
+                </div>
+
+                <div class="oculto">
+                    <div class="card card-4 card-dir">
+                        <h3>Experiências Culturais</h3>
+                        <p>Facilitamos a participação dos clientes em experiências culturais autênticas, como cerimônias do chá, aulas de ikebana, workshops de caligrafia e outras atividades tradicionais japonesas.</p>
+                    </div>
+                    <div class="card card-5 card-esq">
+                        <h3>Excursões de Aventura</h3>
+                        <p>Organizamos excursões de aventura para explorar as belezas naturais do Japão, como caminhadas em trilhas cênicas, passeios de bicicleta pelo campo ou até mesmo esportes aquáticos em praias paradisíacas.</p>
+                    </div>
+                    <div class="card card-6 card-dir">
+                        <h3>Turismo Religioso</h3>
+                        <p>Organizamos visitas a templos e santuários históricos, oferecendo aos clientes a oportunidade de aprender sobre as tradições religiosas e espirituais do Japão.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-button-mais" >
+                <button class="btns-mais" onclick="verMais()" id="btn-vm">Veja mais</button>
+            </div>
+        </div>
+
+        <div class="d-pontos-turisticos">
+            <h2>Principais pontos turisticos</h2>
+            <div class="d-cards-container">
+                <div class="d-cards-tour">
+                    <div class="card-tour current-item">
+                        <div class="img-tour">
+                            <img src="./imagens/pontos-turisticos/castelo-himeji.jpg">
+                        </div>
+                        <div class="text-tour">
+                            <p>Visita ao Castelo Himeji</p>
+                        </div>
+                    </div>
+                    <div class="card-tour current-item">
+                        <div class="img-tour">
+                            <img src="./imagens/pontos-turisticos/monte-fuji.jpg">
+                        </div>
+                        <div class="text-tour">
+                            <p>Visita ao Monte Fuji</p>
+                        </div>
+                    </div>
+                    <div class="card-tour current-item">
+                        <div class="img-tour">
+                            <img src="./imagens/pontos-turisticos/tokyo-skytree.jpg">
+                        </div>
+                        <div class="text-tour">
+                            <p>Visita a Tokyo Skytree</p>
+                        </div>
+                    </div>
+                    <div class="card-tour current-item">
+                        <div class="img-tour">
+                            <img src="./imagens/pontos-turisticos/quioto.jpg">
+                        </div>
+                        <div class="text-tour">
+                            <p>Passeio por kyoto</p>
+                        </div>
+                    </div>
+                    <div class="card-tour current-item">
+                        <div class="img-tour">
+                            <img src="./imagens/pontos-turisticos/templo-senso-ji.jpg">
+                        </div>
+                        <div class="text-tour">
+                            <p>Visita ao templo senso-ji</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="seta seta-esq" onclick="clicar('left')"><ion-icon name="arrow-back-outline"></ion-icon></button>
+            <button class="seta seta-dir" onclick="clicar('right')"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+        </div>
+    </section>
+
+    <section id="galeria" class="section-galeria">
+        <h2>Galeria</h2>
+
+        <div class="d-galeria">
+            <div class="img-galeria img-g1">
+                <img src="./imagens/img-galeria/castelo-osaka.jpg" alt="castelo de Osaka">
+            </div>
+            <div class="img-galeria img-g2">
+                <img src="./imagens/img-galeria/monte-fuji-fotografia.jpg" alt="imagem do monte fuji">
+            </div>
+            <div class="img-galeria img-g3">
+                <img src="./imagens/img-galeria/templo.jpg" alt="templo japonês">
+            </div>
+            <div class="img-galeria img-g4">
+                <img src="./imagens/img-galeria/fushimi-inari-taisha.jpg" alt="Santuário xintoísta">
+            </div>
+        </div>
+
+        <div class="d-button-mais">
+            <a href="./gallery.html" class="btns-mais">Veja mais</a>
+        </div>
+    </section>
+
+    <section id="pacotes" class="section-pacotes">
+        <h2>Pacotes</h2>
+
+        <div class="d-pacotes">
+            <div class="pacote pacote-1">
+                <div class="d-pac-principal">
+                    <div class="img-pac">
+                        <img src="./imagens/img-pacotes/pexels-akira-deng-4107414.jpg" alt="">
+                    </div>
+                    <div class="info-pac">
+                        <h3>Descobrindo o Japão</h3>
+                        <p>Destinos: Tokyo e Kyoto</p>
+                        <p>Duração: 6 dias</p>
+                        <p class="valor-pac">A partir de R$7.500 por pessoa</p>
+                        <div class="d-button-pac">
+                            <span id="span1" onclick="saberMais(1)">Saiba mais</span>
+                            <button onclick="openModal(1)">Adquirir Pacote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-incluso">
+                    <div class="incluso-conteudo">
+                        <strong>Inclusões:</strong>
+                        <ol>
+                            <li>Passagem aérea de ida e volta para Tokyo (Aeroporto Internacional de Narita ou Haneda).</li>
+                            <li>5 noites de hospedagem em hotéis de categoria econômica, com café da manhã continental incluído.</li>
+                            <li>Transferências de chegada e saída em Tokyo e Kyoto.</li>
+                            <li>Viagem de ida e volta em trem-bala (Shinkansen) entre Tokyo e Kyoto, em classe econômica.</li>
+                            <li>Passeios turísticos autoguiados em Tokyo e Kyoto, com mapas e guias impressos.</li>
+                            <li>Cartão de transporte público pré-pago para uso em Tokyo e Kyoto.</li>
+                            <li>Todas as taxas e impostos locais incluídos.</li>
+                        </ol>
+                        <strong>Observações:</strong>
+                        <ul>
+                            <li>Este pacote oferece uma opção mais econômica para os viajantes que desejam explorar o Japão com um orçamento mais limitado.</li>
+                            <li>As acomodações podem ser simples, mas confortáveis e convenientemente localizadas.</li>
+                            <li>As atividades são autoguiadas para permitir flexibilidade e liberdade durante a viagem.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="pacote pacote-2">
+                <div class="d-pac-principal">
+                    <div class="img-pac">
+                        <img src="./imagens/img-pacotes/pexels-kenzo-okuma-13085856.jpg" alt="">
+                    </div>
+                    <div class="info-pac">
+                        <h3>Essência do Japão</h3>
+                        <p>Destinos: Tokyo e Kyoto</p>
+                        <p>Duração: 7 dias</p>
+                        <p class="valor-pac">A partir de R$12.500 por pessoa</p>
+                        <div class="d-button-pac">
+                            <span id="span2" onclick="saberMais(2)">Saiba mais</span>
+                            <button onclick="openModal(2)">Adquirir Pacote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-incluso d-incluso-2">
+                    <div class="incluso-conteudo">
+                        <strong>Inclusões:</strong>
+                        <ol>
+                            <li>Passagem aérea de ida e volta para Tokyo (Aeroporto Internacional de Narita ou Haneda).</li>
+                            <li>6 noites de hospedagem em hotéis de categoria turística superior, com café da manhã incluído.</li>
+                            <li>Transferências de chegada e saída em Tokyo e Kyoto.</li>
+                            <li>Viagem de ida e volta em trem-bala (Shinkansen) entre Tokyo e Kyoto.</li>
+                            <li>Guia turístico profissional falando português durante as visitas guiadas em Tokyo e Kyoto.</li>
+                            <li>Excursão de um dia ao Monte Fuji e aos Cinco Lagos, incluindo transporte, guia turístico e almoço.</li>
+                            <li>Passeio noturno opcional por Shibuya em Tokyo.</li>
+                            <li>Todas as taxas e impostos locais incluídos.</li>
+                        </ol>
+                        <strong>Observações:</strong>
+                        <ul>
+                            <li>Os preços e disponibilidade estão sujeitos a confirmação no momento da reserva.
+                            </li>
+                            <li>Este pacote pode ser personalizado de acordo com as preferências do cliente, incluindo ajustes de itinerário, adição de atividades opcionais, etc.</li>
+                            <li>A reserva antecipada é altamente recomendada devido à alta demanda durante determinadas épocas do ano, como a temporada de flores de cerejeira e o outono.</li>
+                            <li>Os clientes são responsáveis por obter os documentos de viagem necessários, como passaporte e visto (se aplicável).</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pacote pacote-3">
+                <div class="d-pac-principal">
+                    <div class="img-pac">
+                        <img src="./imagens/img-pacotes/pexels-kai-dewitt-10974442.jpg" alt="">
+                    </div>
+                    <div class="info-pac">
+                        <h3>Jóias do Japão</h3>
+                        <p>Destinos: Tokyo, Kyoto, Hiroshima e Hakone</p>
+                        <p>Duração: 10 dias</p>
+                        <p class="valor-pac">A partir de R$45.000 por pessoa</p>
+                        <div class="d-button-pac">
+                            <span id="span3" onclick="saberMais(3)">Saiba mais</span>
+                            <button onclick="openModal(3)">Adquirir Pacote</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-incluso d-incluso-3">
+                    <div class="incluso-conteudo">
+                        <strong>Inclusões:</strong>
+                        <ol>
+                            <li>Passagem aérea de ida e volta em classe executiva para Tokyo (Aeroporto Internacional de Narita ou Haneda).</li>
+                            <li>9 noites de hospedagem em hotéis de luxo, incluindo hotéis boutique e ryokans tradicionais, com café da manhã incluído.</li>
+                            <li>Transferências de chegada e saída em Tokyo.</li>
+                            <li>Viagem em trem-bala (Shinkansen) de Tokyo para Kyoto, com bilhete de primeira classe.</li>
+                            <li>Viagem de ida e volta em trem-bala (Shinkansen) entre Kyoto e Hiroshima.</li>
+                            <li>Excursão de um dia a Hiroshima e Miyajima, incluindo transporte privado, guia turístico e almoço gourmet.</li>
+                            <li>Viagem de ida e volta em trem-bala (Shinkansen) entre Tokyo e Hakone, com bilhete de primeira classe.</li>
+                            <li>Excursão de um dia a Hakone, incluindo passeio de barco no Lago Ashi, teleférico até o Monte Komagatake e visita a fontes termais naturais (onsens).</li>
+                            <li>Guia turístico profissional falando inglês durante todas as visitas guiadas.</li>
+                            <li>Todas as taxas e impostos locais incluídos.</li>
+                        </ol>
+                        <strong>Observações:</strong>
+                        <ul>
+                            <li>Este pacote oferece uma experiência de viagem de luxo, com acomodações exclusivas, transporte de primeira classe e experiências gastronômicas e culturais premium.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="opacity"></div>
+
+    <section class="section-modal">
+        <div class="modal-payment">
+            <div class="d-title-modal">
+                <h2 class="title-modal">Você está adquirindo o pacote Essência do japão</h2>
+            </div>
+
+            <div class="content-modal">
+                <div class="info-modal">
+                    <p class="destino">Destinos: Tokyo e Kyoto</p>
+                    <p class="duracao">Duração: 6 dias</p>
+                    <p class="price-modal">A partir de R$7.500 por pessoa</p>
+                    <p>
+                        Quantas pessoas: 
+                        <input type="number" name="" id="qtdpessoas" required>
+                    </p>
+                    <div class="d-button">
+                        <button onclick="calcularValor()">Calcular valor</button>
+                    </div>
+                    <p class="total-price"></p>
+                </div>
+                <p id="line"></p>
+                <div class="payment-details">
+                    <p id="p-title">Escolha seu método de pagamento:</p>
+
+                    <select>
+                        <option>Pix</option>
+                        <option>Cartão de Crédito</option>
+                        <option>Cartão de Débito</option>
+                        <option>Boleto</option>
+                    </select>
+
+                    <div class="d-button">
+                        <button>Avançar</button>
+                    </div>
+
+                    <p class="p-obs">Assim que confirmado o pagamento, entraremos em contato.</p>
+                </div>
+            </div>
+
+            <div class="close-modal">
+                <span onclick="closeModal()">Fechar</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section-contato">
+        <h2>Contato</h2>
+
+        <form class="d-inputs">
+            <div class="div-input-name">
+                <span class="span-input">Seu nome:</span>
+                <input type="text" name="in-name" id="in-name">
+            </div>
+
+            <div class="div-input-email">
+                <span class="span-input">Seu email:</span>
+                <input type="email" name="in-email" id="in-email">
+            </div>
+
+            <div class="div-input-phone">
+                <span class="span-input">Telefone:</span>
+                <input type="number" name="in-number" id="in-number">
+            </div>
+
+            <div class="div-input-mensagem">
+                <span class="span-input">Mensagem:</span>
+                <input type="text" name="in-mensagem" id="in-mensagem">
+            </div>
+        </form>
+
+        <div class="d-button-cont">
+            <button class="but-cont">Enviar</button>
+        </div>
+
+    </section>
+
+    <section class="section-newslatter">
+        <div class="news-mail">
+            <div class="title-news">
+                <h2>Receba nossa </br>NEWSLATTER</h2>
+            </div>
+            <div class="d-input-news">
+                <span class="span-input">Seu email:</span>
+                <input type="email" name="in-email" id="in-email">
+            </div>
+        </div>
+
+        <div class="d-paragrafo-news">
+            <p>Digite seu email para está recebendo nossa newslatter exclusiva com varias noticiais e novidades  interessantes</p>
+        </div>
+
+        <div class="d-button-news">
+            <button>Receber Newslatter</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="d-politicas">
+            <a href="#">Políticas de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+        </div>
+
+        <div class="logo">
+            <h2>Nippon Tours</h2>
+        </div>
+
+        
+        <div class="d-suporte">
+            <h3>Suporte</h3>
+            <div class="icons-suport">
+                <span class="icon-whats "><ion-icon name="logo-whatsapp"></ion-icon></span>
+                <span class="icon-insta"><ion-icon name="logo-instagram"></ion-icon></span>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./js/script.js"></script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="./css/gallery-style.css">
+</head>
+<body>
+    <header>
+        <h2>Nippon Tours</h2>
+        <a href="./index.html">Voltar para a página principal</a>
+    </header>
+    <section class="gallery-container">
+        <div class="gallery-content">
+            <h1>Galeria</h1>
+            <p>Essas são fotos tiradas por nossos clientes durante suas  viajens ao japão e depois enviadas para nós.</p>
+        </div>
+
+        <div class="div-imagens">
+            <ul class="gallery-image-container">
+                <li id="image01" onclick="clicouimg('01')"></li>
+                <li id="image02" onclick="clicouimg('02')"></li>
+                <li id="image03" onclick="clicouimg('03')"></li>
+                <li id="image04" onclick="clicouimg('04')"></li>
+                <li id="image05" onclick="clicouimg('05')"></li>
+                <li id="image06" onclick="clicouimg('06')"></li>
+                <li id="image07" onclick="clicouimg('07')"></li>
+                <li id="image08" onclick="clicouimg('08')"></li>
+                <li id="image09" onclick="clicouimg('09')"></li>
+                <li id="image10" onclick="clicouimg('10')"></li>
+                <li id="image11" onclick="clicouimg('11')"></li>
+                <li id="image12" onclick="clicouimg('12')"></li>
+            </ul>
+
+            <div class="opacity"></div>
+
+            <div class="img-centro-container">
+                <div class="img-centro"></div>
+                <button class="btn-exit-img" onclick="fecharimg()">×</button>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <script src="./js/scriptgallery.js"></script>
+</body>
+</html>
